@@ -17,6 +17,7 @@
   width: 8rem;
   height: 8rem;
   object-fit: contain;
+  background-color: rgb(221, 221, 221);
 }
 .backToHome {
   margin: 3rem 0 0;
