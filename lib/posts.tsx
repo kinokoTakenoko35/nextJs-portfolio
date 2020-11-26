@@ -29,13 +29,13 @@ export function getSortedPostsData() {
     };
   });
   // 投稿を日付でソートする
-  return allPostsData.sort((a, b) => {
+  return allPostsData.sort((a : any, b : any) => {
     if (a.date < b.date) {
-      return 1;
+      return 1
     } else {
-      return -1;
+      return -1
     }
-  });
+  })
 }
 
 export function getAllPostIds() {
