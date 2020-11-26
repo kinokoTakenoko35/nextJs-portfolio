@@ -1,3 +1,11 @@
+## 変更点
+- TypeScriptへチェンジ
+- Style少しチェンジ
+
+Vercel
+https://next-js-portfolio-8frzfg8lk.vercel.app/
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
