@@ -5,6 +5,8 @@ import matter from "gray-matter";
 //マークダウンのコンテンツをレンダーするために、remark ライブラリ
 import remark from "remark";
 import html from "remark-html";
+//Fetch
+import fetch from 'node-fetch';
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -38,8 +40,10 @@ export function getSortedPostsData() {
   })
 }
 
-export function getAllPostIds() {
+//非同期処理なので関数にasyncを付与
+export async function getAllPostIds() {
   const fileNames = fs.readdirSync(postsDirectory);
+  //const repoUrl = "https://api.github.com/repos/kinokoTakenoko35/nextJs-portfoli/contents/posts"
   return fileNames.map((fileName) => {
     return {
       params: {
